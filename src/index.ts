@@ -36,8 +36,8 @@ export declare namespace AIUI {
 
   interface Response {
     speak(word: string, data?: any);
-    over(data);
-    end(word, data);
+    over(data?);
+    end(word: string, data?);
     call(functionName: any, event: Event, context, response: Response);
   }
 
